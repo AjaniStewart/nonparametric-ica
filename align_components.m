@@ -2,7 +2,7 @@ function [perm, signedCorr, Shat_aligned] = align_components( ...
                                       Strue, Shat, flipSigns)
 %ALIGN_COMPONENTS  Align inferred components to ground-truth components.
 %
-% [perm, signedCorr, Shat_aligned] = MATCHCOMPONENTSGT(Strue, Shat, flipSigns)
+% [perm, signedCorr, Shat_aligned] = ALIGN_COMPONENTS(Strue, Shat, flipSigns)
 %
 % Uses the Hungarian algorithm ( Statistics & ML Toolbox function
 % MATCHPAIRS ) to find the one-to-one assignment that maximises the
@@ -28,7 +28,7 @@ function [perm, signedCorr, Shat_aligned] = align_components( ...
 %                                   applied (empty if flipSigns == false).
 %
 % Example
-%   [perm,corr,Shat2] = matchComponentsGT(S,Shat);
+%   [perm,corr,Shat2] = align_components(S,Shat);
 %   disp([perm; corr])
 %
 % --------------------------------------------------------------------

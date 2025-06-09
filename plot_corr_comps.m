@@ -1,6 +1,6 @@
 load("simulated_voxel_data.mat")
 
-indices = [1, 8, 13, 17, 21, 26, 32, 41, 55, 90];
+indices = [0,1,2,3,4,5,7,8,10,13,20];
 noisy_voxels = struct();
 K = 12;
 N_RANDOM_INITS = 10;
